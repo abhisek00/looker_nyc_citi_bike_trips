@@ -54,6 +54,7 @@
     }
 
     measure: Avg_Bikes_Available {
+      hidden:  no
       type: average
       sql: ${num_bikes_available} ;;
     }
