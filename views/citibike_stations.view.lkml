@@ -119,7 +119,9 @@ view: citibike_stations {
   }
 
 
-
+measure: count {
+  type: count
+}
   measure: max_capacity {
     type: max
     drill_fields: [name, short_name]
