@@ -122,8 +122,15 @@ view: citibike_stations {
 measure: count {
   type: count
 }
-  measure: max_capacity {
-    type: max
-    drill_fields: [name, short_name]
+
+  measure: Total_bikes_Count {
+    type: count
+    drill_fields: [name]
+  }
+
+  measure: Avg_Bikes_Available {
+    hidden:  no
+    type: average
+    sql: ${num_bikes_available} ;;
   }
 }
