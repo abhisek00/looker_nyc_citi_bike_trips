@@ -41,4 +41,10 @@
       type: yesno
       sql: ${Station_rank} <= 5 ;;
     }
+
+    dimension: Station_rank_grouped {
+      label: "Station Name Grouped"
+      type: string
+      sql: case when ${Station_rank_top5}tation_rank_top5} then ${name} else '6) Other' end ;;
+    }
   }
