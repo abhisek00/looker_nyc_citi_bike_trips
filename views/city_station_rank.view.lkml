@@ -17,7 +17,7 @@
           field: citibike_stations.last_reported_date
           value: "2021/11/08"
         }
-bind_all_filters: yes
+
 
       }
     }
