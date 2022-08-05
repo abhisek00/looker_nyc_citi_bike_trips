@@ -52,4 +52,9 @@
       type: count
       drill_fields: [name]
     }
+
+    measure: Avg_Bikes_Available {
+      type: average
+      sql: ${num_bikes_available} ;;
+    }
   }
