@@ -39,6 +39,6 @@
 
     dimension: Station_rank_top5 {
       type: yesno
-      sql: {Station_rank} >5 ;;
+      sql: ${Station_rank} >5 ;;
     }
   }
