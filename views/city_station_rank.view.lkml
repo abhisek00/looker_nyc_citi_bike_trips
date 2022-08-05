@@ -48,14 +48,5 @@
       sql: case when ${Station_rank_top100} then ${name} else '101) Other' end ;;
     }
 
-    measure: Total_bikes_Count {
-      type: count
-      drill_fields: [name]
-    }
 
-    measure: Avg_Bikes_Available {
-      hidden:  no
-      type: average
-      sql: ${num_bikes_available} ;;
-    }
   }
