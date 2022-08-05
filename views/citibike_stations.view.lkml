@@ -118,10 +118,7 @@ view: citibike_stations {
     sql: ${TABLE}.station_id ;;
   }
 
-measure: Total_bikes_Count {
-  type: count_distinct
-  sql: ${capacity} ;;
-  }
+
 
   measure: max_capacity {
     type: max

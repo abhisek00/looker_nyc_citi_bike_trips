@@ -17,7 +17,7 @@
           field: citibike_stations.last_reported_date
           value: "2021/11/08"
         }
-
+bind_all_filters: yes
 
       }
     }
@@ -46,5 +46,10 @@
       label: "Station Name Grouped"
       type: string
       sql: case when ${Station_rank_top100} then ${name} else '101) Other' end ;;
+    }
+
+    measure: Total_bikes_Count {
+      type: count_distinct
+      sql: ${capacity} ;;
     }
   }
