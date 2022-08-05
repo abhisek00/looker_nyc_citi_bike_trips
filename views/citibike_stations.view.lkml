@@ -118,9 +118,9 @@ view: citibike_stations {
     sql: ${TABLE}.station_id ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [name, short_name]
+measure: Total_bikes_Count {
+  type: number
+  sql: ${capacity};;
   }
 
   measure: max_capacity {

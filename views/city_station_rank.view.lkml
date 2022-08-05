@@ -37,14 +37,14 @@
       type: number
     }
 
-    dimension: Station_rank_top5 {
+    dimension: Station_rank_top100 {
       type: yesno
-      sql: ${Station_rank} <= 5 ;;
+      sql: ${Station_rank} <= 100 ;;
     }
 
     dimension: Station_rank_grouped {
       label: "Station Name Grouped"
       type: string
-      sql: case when ${Station_rank_top5} then ${name} else '6) Other' end ;;
+      sql: case when ${Station_rank_top100} then ${name} else '6) Other' end ;;
     }
   }
