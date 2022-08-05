@@ -119,8 +119,8 @@ view: citibike_stations {
   }
 
 measure: Total_bikes_Count {
-  type: number
-  sql: ${capacity};;
+  type: count
+  drill_fields:[capacity]
   }
 
   measure: max_capacity {

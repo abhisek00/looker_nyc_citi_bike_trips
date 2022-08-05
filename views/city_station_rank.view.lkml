@@ -45,6 +45,6 @@
     dimension: Station_rank_grouped {
       label: "Station Name Grouped"
       type: string
-      sql: case when ${Station_rank_top100} then ${name} else '6) Other' end ;;
+      sql: case when ${Station_rank_top100} then ${name} else '101) Other' end ;;
     }
   }
