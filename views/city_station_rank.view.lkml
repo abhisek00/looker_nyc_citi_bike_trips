@@ -49,7 +49,6 @@ bind_all_filters: yes
     }
 
     measure: Total_bikes_Count {
-      type: count_distinct
-      sql: ${capacity} ;;
+      type: count
     }
   }
